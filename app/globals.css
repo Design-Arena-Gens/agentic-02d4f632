@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cosmic-800;
+  }
+
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-cosmic-400 via-reality-400 to-cosmic-600 bg-clip-text text-transparent;
+  }
+
+  .glow {
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5),
+                 0 0 20px rgba(56, 189, 248, 0.3),
+                 0 0 30px rgba(56, 189, 248, 0.2);
+  }
+
+  .card-glow {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15),
+                0 0 40px rgba(168, 85, 247, 0.1);
+  }
+}
